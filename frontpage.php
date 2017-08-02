@@ -11,8 +11,41 @@
                       <!-- Carousel items -->
                          <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
                              <div class="carousel-inner onebyone-carosel">
-                                 <div class="item-active">
-
+                                 <div class="item active">
+                                     <div class="col-md-4">
+                                         <!-- <a href="#"><img src="" class="img-responsive center-block"></a>
+                                         <div class="text-center"></div> -->
+                                     </div>
+                                 </div>
+                                 <div class="item">
+                                     <div class="col-md-4">
+                                         <!-- <a href="#"><img src="" class="img-responsive center-block"></a>
+                                         <div class="text-center"></div> -->
+                                     </div>
+                                 </div>
+                                 <div class="item">
+                                     <div class="col-md-4">
+                                         <!-- <a href="#"><img src="" class="img-responsive center-block"></a>
+                                         <div class="text-center"></div> -->
+                                     </div>
+                                 </div>
+                                 <div class="item">
+                                     <div class="col-md-4">
+                                         <!-- <a href="#"><img src="" class="img-responsive center-block"></a>
+                                         <div class="text-center"></div> -->
+                                     </div>
+                                 </div>
+                                 <div class="item">
+                                     <div class="col-md-4">
+                                         <!-- <a href="#"><img src="" class="img-responsive center-block"></a>
+                                         <div class="text-center"></div> -->
+                                     </div>
+                                 </div>
+                                 <div class="item">
+                                     <div class="col-md-4">
+                                         <!-- <a href="#"><img src="" class="img-responsive center-block"></a>
+                                         <div class="text-center"></div> -->
+                                     </div>
                                  </div>
                              </div>
                              <a class="left carousel-control" href="#eventCarousel" data-slide="prev"></a>
@@ -31,7 +64,7 @@
      <script>
      $(document).ready(function () {
        $('#myCarousel').carousel({
-        interval: 2000
+        interval: 4000
         })
        $('.fdi-Carousel .item').each(function () {
          var next = $(this).next();
@@ -57,7 +90,7 @@
 
         success: function(data) {
          for(var i=0; i <7 ; i++) {
-           $('.item-active').append('<div class="item"><div class="col-md-4"><div class="text-center">' + data.books[i].title + '</div></div></div><img src="' + data.books[i].cover + '">');
+           $('.col-md-4').append('<div class="col-md-4><div class="text-center">' + data.books[i].title + '</div></div><img src="' + data.books[i].cover + '">');
           }
         //   $('#myCarousel').hide()
         //  });
