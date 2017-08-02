@@ -1,0 +1,35 @@
+header .navbar-default {
+ background-color: inherit;
+ border: none;
+}
+header .container {
+ width: 100%;}
+header .container-fluid {
+ padding: inherit;}
+div .container-fluid{
+   width: 100% !important;
+}
+.navbar-default {
+ width: 100%;
+}
+header .btn {
+ background-color: #083755
+;
+ border: none;
+ width: 5vw;
+}
+#trif {
+ height: 20vw;
+}
+#nuagelogo {
+ margin-top: -20vw;
+ height: 15vw;
+ margin-left: 37.5vw;
+}
+#logout {
+ background-color: #C84241
+;
+}
+.input-group{
+width: 12vw;
+}
